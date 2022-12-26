@@ -6,6 +6,7 @@ import cors from 'cors';
 import { WebSocket } from 'ws';
 import db from './db.js';
 import wsConnect from './wsConnect.js';
+import path from "path";
 
 dotenv.config();
 db.connect();
