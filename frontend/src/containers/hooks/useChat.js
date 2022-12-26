@@ -2,7 +2,7 @@ import { useState, useEffect, createContext, useContext } from "react";
 import { Button, message, notification, Space } from 'antd';
 import { MessageOutlined } from '@ant-design/icons';
 
-const client = new WebSocket('ws://localhost:4000');
+const client = new WebSocket('wss://chaty-production.up.railway.app');
 const LOCALSTORAGE_ME_KEY = 'save-me';
 const savedMe = localStorage.getItem(LOCALSTORAGE_ME_KEY);
 
